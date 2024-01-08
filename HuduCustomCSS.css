@@ -40,3 +40,9 @@ details>summary:first-of-type {
 .img-from-confluence {
     border: 1px solid gray;
 }
+
+/* Inline code - grey background*/
+code {
+    background-color: #F1F2F4;
+    padding: 2px .5ch;
+}
