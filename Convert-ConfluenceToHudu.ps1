@@ -165,16 +165,16 @@ foreach ($htmlFile in $htmlFiles) {
     if ($titleMatches.Count -gt 0) {
         # Get the title text from the match
         $titleText = $titleMatches[0].Groups[2].Value
-        $sanitizedTitle = $titleText -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '^-+|-+$'
+        $sanitizedTitle = $titleText -replace '[^\w\s-]', '' -replace '\s+', ' ' -replace '^-+|-+$'
         # Set the path for the new converted file
         $convertedFilePath = "CONVERTED - " + $sanitizedTitle + ".html"
     } else {
-        Write-Host "No title text found in the HTML file." + $htmlFile.FullName 
+        Write-Host "No title text found in the HTML file:" $htmlFile.FullName 
     }
 
     # Write the modified content to the new file
     $htmlContent | Set-Content -Path $convertedFilePath
 
     # Output the path of the converted file
-    Write-Host "Coverted file: " + $convertedFilePath
+    Write-Host "Coverted file: " $convertedFilePath
 }
