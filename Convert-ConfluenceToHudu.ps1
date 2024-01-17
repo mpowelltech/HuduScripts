@@ -26,6 +26,8 @@
         - This is designed for Confluence cloud. No idea how on-prem/datacentre exports will work with this.
 
         This should ideally be used in conjunction with https://github.com/mpowelltech/HuduScripts/blob/main/HuduCustomCSS.css for the best effects on things like expand sections.
+
+        If I saved you some time, I take tips: https://link.mpowell.tech/donate
 #>
 
 # Prompt user for root folder
