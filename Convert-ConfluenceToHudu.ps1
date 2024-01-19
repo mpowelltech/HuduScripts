@@ -1,6 +1,7 @@
 <#
     .SYNOPSIS
         TLDR: Run this and enter the path to a confluence export and it will convert it to look very similar to confluence
+        Works with PowerShell V7 - tested on Windows and MacOS.
     .DESCRIPTION
         Essentially, this is designed so that you download an export of your Space(s) as HTML: https://support.atlassian.com/confluence-cloud/docs/export-content-to-word-pdf-html-and-xml/
         Then unzip the export to a folder.
