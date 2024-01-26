@@ -1,39 +1,31 @@
 /* Make the details boxes in KB articles look like confluence */
-details {
+.rich_text_content details {
   border: 1px solid transparent;
   border-radius: 4px;
-  padding: 0.5em 0.5em 0;
-  pointer-events: none;
+  padding: unset;
 }
 
 /* Make the details boxes in KB articles look like confluence */
-details:hover {
+.rich_text_content details:hover {
   border: 1px solid #aaa;
 }
 
 /* Make the details boxes in KB articles look like confluence */
-details[open] {
-  padding: 0.5em;
+.rich_text_content details[open] {
   border: 1px solid #ccc;
 }
 
 /* Make the details boxes in KB articles look like confluence */
-details[open]:hover {
+.rich_text_content details[open]:hover {
   border: 1px solid #aaa;
 }
 
 /* Make the details boxes in KB articles look like confluence */
-details>summary {
-  font-weight: bold;
-  margin: -0.5em -0.5em 0;
-  padding: 0.5em;
-  user-select: none;
-  pointer-events: auto;
-}
-
-/* Make the details boxes in KB articles look like confluence */
-details>summary:first-of-type {
-      list-style-type: revert;
+.rich_text_content summary {
+  border-bottom: none;
+  padding: 1rem .5em;
+  padding-top: 1rem;
+  position: relative;
 }
 
 /* Add border to images from confluence */
